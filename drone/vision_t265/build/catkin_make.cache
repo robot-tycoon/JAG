@@ -1,0 +1,2 @@
+realsense-ros/realsense2_camera:realsense-ros/realsense2_description:vision_to_mavros
+-DCATKIN_DEVEL_PREFIX=/home/amov/vision_t265/devel -DCMAKE_INSTALL_PREFIX=/home/amov/vision_t265/install -G Unix Makefiles

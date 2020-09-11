@@ -1,0 +1,34 @@
+<!--
+
+由于urdf文件里的关节类型都是 fixed 固定关节，所以不需要运行 joint_state_publisher 节点
+<node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
+
+
+-->
+
+<launch>  
+
+  <param name="robot_description"
+  textfile="$(find cartographer_ros)/urdf/my_uav_2d.urdf" />
+
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+
+  <param name="/use_sim_time" value="false" />
+
+  <node name="cartographer_node" pkg="cartographer_ros"  
+      type="cartographer_node" args="  
+          -configuration_directory $(find cartographer_ros)/configuration_files  
+          -configuration_basename my_hokuyo_imu.lua"
+      output="screen">  
+    <remap from="scan" to="scan" />
+    <remap from="imu" to="/mavros/imu/data_raw" />
+
+  </node>
+
+  <node name="cartographer_occupancy_grid_node" pkg="cartographer_ros"
+      type="cartographer_occupancy_grid_node" args="-resolution 0.05" />
+
+  <node name="rviz" pkg="rviz" type="rviz" required="true"
+      args="-d $(find cartographer_ros)/configuration_files/2d_cartg_imu.rviz" />
+
+</launch>

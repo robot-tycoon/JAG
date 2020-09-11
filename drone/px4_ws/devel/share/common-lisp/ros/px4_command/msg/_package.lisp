@@ -1,0 +1,19 @@
+(cl:defpackage px4_command-msg
+  (:use )
+  (:export
+   "<ATTITUDEREFERENCE>"
+   "ATTITUDEREFERENCE"
+   "<CONTROLCOMMAND>"
+   "CONTROLCOMMAND"
+   "<CONTROLOUTPUT>"
+   "CONTROLOUTPUT"
+   "<DRONESTATE>"
+   "DRONESTATE"
+   "<TOPIC_FOR_LOG>"
+   "TOPIC_FOR_LOG"
+   "<TRAJECTORY>"
+   "TRAJECTORY"
+   "<TRAJECTORYPOINT>"
+   "TRAJECTORYPOINT"
+  ))
+

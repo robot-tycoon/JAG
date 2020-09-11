@@ -1,0 +1,8 @@
+prefix=/opt/ros/melodic/share/ddynamic_reconfigure
+
+Name: ddynamic_reconfigure
+Description: Description of ddynamic_reconfigure
+Version: 0.2.1
+Cflags: -I/opt/ros/melodic/share/ddynamic_reconfigure/include
+Libs: -L/opt/ros/melodic/share/ddynamic_reconfigure/lib -lddynamic_reconfigure
+Requires: roscpp dynamic_reconfigure

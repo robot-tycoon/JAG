@@ -1,0 +1,26 @@
+<!--
+-->
+
+<launch>  
+
+  <param name="robot_description"
+  textfile="$(find cartographer_ros)/urdf/my_uav_2d.urdf" />
+ 
+  <node name="robot_state_publisher" pkg="robot_state_publisher"
+  type="robot_state_publisher" />
+
+  <param name="/use_sim_time" value="false" />
+
+  <node name="cartographer_node" pkg="cartographer_ros"  
+      type="cartographer_node" args="  
+          -configuration_directory $(find cartographer_ros)/configuration_files  
+          -configuration_basename my_rplidar_imu.lua"
+      output="screen">  
+    <remap from="scan" to="scan" />
+    <remap from="imu" to="/mavros/imu/data_raw" />
+
+  </node>
+
+  <node name="cartographer_occupancy_grid_node" pkg="cartographer_ros"
+      type="cartographer_occupancy_grid_node" args="-resolution 0.05" />
+</launch>

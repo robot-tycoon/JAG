@@ -1,0 +1,8 @@
+prefix=/home/amov/px4_ws/install
+
+Name: px4_command
+Description: Description of px4_command
+Version: 0.0.0
+Cflags: -I/home/amov/px4_ws/install/include
+Libs: -L/home/amov/px4_ws/install/lib 
+Requires: message_runtime

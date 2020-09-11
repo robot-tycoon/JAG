@@ -1,0 +1,2 @@
+rplidar_ros
+-DCATKIN_DEVEL_PREFIX=/home/amov/ws_rplidar/devel -DCMAKE_INSTALL_PREFIX=/home/amov/ws_rplidar/install -G Unix Makefiles

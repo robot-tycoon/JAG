@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC   -shared -Wl,-soname,libOptiTrackFeedbackRigidBody.so -o /home/amov/px4_ws/devel/lib/libOptiTrackFeedbackRigidBody.so CMakeFiles/OptiTrackFeedbackRigidBody.dir/src/lib/OptiTrackFeedBackRigidBody.cpp.o 

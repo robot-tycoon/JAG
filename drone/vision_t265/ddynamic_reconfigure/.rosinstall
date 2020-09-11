@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /opt/ros/melodic/share/ddynamic_reconfigure/setup.sh

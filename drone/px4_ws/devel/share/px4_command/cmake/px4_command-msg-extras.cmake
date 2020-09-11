@@ -1,0 +1,2 @@
+set(px4_command_MESSAGE_FILES "/home/amov/px4_ws/src/px4_command/msg/ControlCommand.msg;/home/amov/px4_ws/src/px4_command/msg/TrajectoryPoint.msg;/home/amov/px4_ws/src/px4_command/msg/Trajectory.msg;/home/amov/px4_ws/src/px4_command/msg/AttitudeReference.msg;/home/amov/px4_ws/src/px4_command/msg/DroneState.msg;/home/amov/px4_ws/src/px4_command/msg/Topic_for_log.msg;/home/amov/px4_ws/src/px4_command/msg/ControlOutput.msg")
+set(px4_command_SERVICE_FILES "")
