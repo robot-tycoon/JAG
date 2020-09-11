@@ -1,0 +1,2 @@
+aruco_det_ros:darknet_ros/darknet_ros:darknet_ros/darknet_ros_msgs:digitnum_det_ros:ellipse_det_ros:landpad_det_ros:ros_web_cam
+-DCMAKE_BUILD_TYPE=Release -DCATKIN_DEVEL_PREFIX=/home/wujiaxuan/data/drone/vision_ws/devel -DCMAKE_INSTALL_PREFIX=/home/wujiaxuan/data/drone/vision_ws/install -G Unix Makefiles

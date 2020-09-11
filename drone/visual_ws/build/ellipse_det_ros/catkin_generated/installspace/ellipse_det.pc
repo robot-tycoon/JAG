@@ -1,0 +1,8 @@
+prefix=/home/wujiaxuan/data/drone/vision_ws/install
+
+Name: ellipse_det
+Description: Description of ellipse_det
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/wujiaxuan/data/drone/vision_ws/install/lib 
+Requires: 

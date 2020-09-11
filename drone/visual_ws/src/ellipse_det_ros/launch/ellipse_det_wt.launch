@@ -1,0 +1,9 @@
+<launch>
+	<!-- run the position_control.cpp -->
+
+	<node pkg="ellipse_det" type="ellipse_det" name="ellipse_det" args="wt" output="screen">
+
+		<!-- load blacklist, config -->
+                <rosparam command="load" file="$(find vision_ws)/config/camera_param.yaml" />
+	</node>
+</launch>

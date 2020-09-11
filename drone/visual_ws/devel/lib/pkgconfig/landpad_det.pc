@@ -1,0 +1,8 @@
+prefix=/home/wujiaxuan/data/drone/vision_ws/devel
+
+Name: landpad_det
+Description: Description of landpad_det
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/wujiaxuan/data/drone/vision_ws/devel/lib 
+Requires: 
